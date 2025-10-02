@@ -20,6 +20,9 @@ public class Reader {
 
             case "TABLE":
                 converter.makeTable();
+                break;        
+            default:
+                System.out.println("Opción no válida");
                 break;
 
         }
