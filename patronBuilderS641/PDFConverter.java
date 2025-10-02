@@ -1,16 +1,18 @@
-public class PDFConverter  extends Converter  {
-    
-public void makeLine(){
-        
-       System.out.println("Línea con PDF");
-    }
-    public void makeParagraph(){
+public class PDFConverter extends Converter {
 
-       System.out.println("Párrafo con PDF");
-    }
-   public void makeTable(){
+    public void makeLine() {
 
-       System.out.println("Tabla con PDF");
-    } 
+        System.out.println("Línea con PDF");
+    }
+
+    public void makeParagraph() {
+
+        System.out.println("Párrafo con PDF");
+    }
+
+    public void makeTable() {
+
+        System.out.println("Tabla con PDF");
+    }
 
 }
