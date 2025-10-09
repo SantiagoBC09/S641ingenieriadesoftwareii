@@ -1,12 +1,12 @@
 package personaje;
 import java.util.Scanner;
 
-public class JuegoLucha {
+public class KOF98 {
     private Personaje jugador1;
     private Personaje jugador2;
 
     // Constructor
-    public JuegoLucha(Personaje jugador1, Personaje jugador2) {
+    public KOF98(Personaje jugador1, Personaje jugador2) {
         this.jugador1 = jugador1;
         this.jugador2 = jugador2;
     }
@@ -89,7 +89,7 @@ public class JuegoLucha {
             jugador2 = new Kyo();
         }
 
-        JuegoLucha juego = new JuegoLucha(jugador1, jugador2);
+        KOF98 juego = new KOF98(jugador1, jugador2);
         juego.iniciarPelea();
     }
 }
