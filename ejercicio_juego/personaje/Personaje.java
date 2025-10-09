@@ -22,7 +22,7 @@ class Personaje {
         System.out.println(this.nombre + " ataca a " + oponente.getNombre() + " causando " + dano + " puntos de daño.");
     }
 
-    // Ataque con poder (por defecto, se puede sobreescribir)
+    // Ataque con poder 
     public void ataquePoder(Personaje oponente) {
         Random rand = new Random();
         int dano = rand.nextInt(21) + 20; // entre 20 y 40
@@ -35,7 +35,7 @@ class Personaje {
         Random rand = new Random();
         int dano = rand.nextInt(26) + 25; //;
         oponente.recibirDano(dano);
-        System.out.println(this.nombre + " usa su ATAQUE ESPECIAL y quita la mitad de la vida de " + oponente.getNombre() + ".");
+        System.out.println(this.nombre + " Tira tercera, le quita " + dano + " y deja a " + oponente.getNombre() + " con " + oponente.getPuntosDeVida() + " de HP");
     }
 
     // Método para recibir daño

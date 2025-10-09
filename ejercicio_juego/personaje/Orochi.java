@@ -9,7 +9,7 @@ class Orochi extends Personaje {
     public void ataquePoder(Personaje oponente) {
         int dano = 40; 
         oponente.recibirDano(dano);
-        System.out.println(getNombre() + " lanza tercera y hace" + dano + " puntos de daño.");
+        System.out.println(getNombre() + " tira segunda y hace " + dano + " puntos de daño.");
     }
 }
 

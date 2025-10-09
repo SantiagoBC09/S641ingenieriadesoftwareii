@@ -9,7 +9,7 @@ class Iori extends Personaje {
     public void ataquePoder(Personaje oponente) {
         int dano = 35; // daño fijo
         oponente.recibirDano(dano);
-        System.out.println(getNombre() + " usa su ataque de fuego oscuro y causa " + dano + " puntos de daño.");
+        System.out.println(getNombre() + " tira segunda y causa " + dano + " puntos de daño.");
     }
 }
 
