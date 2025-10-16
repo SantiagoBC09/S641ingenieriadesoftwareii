@@ -107,7 +107,17 @@ public class Vresultado {
         Resultadof resultado = new Resultadof(camara, impresion, cliente);
         Foto foto = new Foto(resultado);
 
-        
+        System.out.println("\n Calculando precio total, espere un momento...");
+        try {
+            for (int i = 0; i < 3; i++) {
+                Thread.sleep(3000); // pausa de 3 segundos
+                System.out.print(". ");
+            }
+            System.out.println();
+            Thread.sleep(700);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
 
         // Mostrar factura final
         System.out.println();
