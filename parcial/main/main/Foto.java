@@ -1,9 +1,11 @@
+package main;
+
 
 class Foto {
 
-    private Resultado resultado;
+    private Resultadof resultado;
 
-    public Foto(Resultado resultado) {
+    public Foto(Resultadof resultado) {
         this.resultado = resultado;
     }
 
