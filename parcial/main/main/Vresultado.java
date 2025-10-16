@@ -107,6 +107,8 @@ public class Vresultado {
         Resultadof resultado = new Resultadof(camara, impresion, cliente);
         Foto foto = new Foto(resultado);
 
+        
+
         // Mostrar factura final
         System.out.println();
         foto.mostrarFactura();

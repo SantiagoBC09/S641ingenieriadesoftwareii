@@ -13,7 +13,7 @@ public class Camara {
         this.formato = formato;
     }
 
-    // 🔧 Constructor que antes estaba vacío — ahora corregido
+    // Constructor que antes estaba vacío — ahora corregido
     public Camara(String modelo, String calidad, String estado, String formato) {
         this.modelo = modelo;
         this.calidad = calidad;

@@ -16,17 +16,8 @@ public class Resultadof {
 
     public void mostrarResultado() {
         
-    System.out.println("=== RESULTADO DE LA SESIÓN DE FOTOS ===");
-
-    // Debug para detectar el null
-    if (camara == null) System.out.println("⚠️ Camara es null");
-    if (impresion == null) System.out.println("⚠️ Impresion es null");
-    if (cliente == null) System.out.println("⚠️ Cliente es null");
-
-    camara.mostrarDetalles();
-    impresion.mostrarDetalles();
-
-        System.out.println("=== RESULTADO DE LA SESIÓN DE FOTOS ===");
+    
+     System.out.println("--| RESULTADO DE LA SESIÓN DE FOTOS |--");
         
         if (cliente != null) {
             System.out.println("Cliente: " + cliente.getNombre());
@@ -39,8 +30,8 @@ public class Resultadof {
 
         double total = impresion.calcularTotal(camara.sacarPrecio());
         System.out.println("----------------------------------------");
-        System.out.println("💰 Precio total de impresión: $" + total);
-        System.out.println("========================================");
+        System.out.println("Precio total de impresion: $" + total);
+        System.out.println("----------------------------------------");
     }
 
     public double getTotal() {
