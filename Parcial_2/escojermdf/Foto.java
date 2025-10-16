@@ -1,19 +1,20 @@
-package main.model.producto;
 
-public class Foto {
-    private String fichero;
-    private double precio;
+class Foto {
 
-    public Foto(String fichero, double precio) {
-        this.fichero = fichero;
-        this.precio = precio;
+    private Resultado resultado;
+
+    public Foto(Resultado resultado) {
+        this.resultado = resultado;
     }
 
-    public double getPrecio() {
-        return precio;
+    public double obtenerPrecioFinal() {
+        return resultado.getTotal();
     }
 
-    public void print() {
-        System.out.println("Imprimiendo foto: " + fichero + " (Precio: $" + precio + ")");
+    public void mostrarFactura() {
+        System.out.println("🧾 FACTURA FINAL");
+        resultado.mostrarResultado();
+        System.out.println("Total a pagar (foto + impresión): $" + obtenerPrecioFinal());
     }
 }
+

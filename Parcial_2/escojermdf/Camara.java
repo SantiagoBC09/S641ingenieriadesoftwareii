@@ -1,4 +1,4 @@
-// Clase Camara
+
 class Camara {
 
     private String modelo;
@@ -55,7 +55,7 @@ class Camara {
     }
 
     public void mostrarDetalles() {
-        System.out.println("📸 Cámara utilizada: " + modelo);
+        System.out.println("Cámara utilizada: " + modelo);
         System.out.println("Calidad: " + calidad);
         System.out.println("Formato: " + formato);
         System.out.println("Precio por foto: $" + sacarPrecio());

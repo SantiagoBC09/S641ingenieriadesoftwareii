@@ -1,7 +1,8 @@
-class Impresion extends Resultado {
+// Clase Impresion
+class Impresion {
 
     private String metodo;
-    private int cantidad; // cantidad debe ser numérica, no String
+    private int cantidad;
 
     public Impresion(String metodo, int cantidad) {
         this.metodo = metodo;
@@ -26,15 +27,23 @@ class Impresion extends Resultado {
         return precioMetodo;
     }
 
-    public double calcularTotal() {
-        return sacarPrecioC() * cantidad;
+    public double calcularTotal(double precioFoto) {
+        // Precio total = precio de foto * cantidad + costo de impresión por unidad
+        return (precioFoto + sacarPrecioC()) * cantidad;
     }
 
     public void mostrarDetalles() {
-        System.out.println("Ya se realizó su impresión.");
         System.out.println("Método de impresión: " + metodo);
         System.out.println("Cantidad de impresiones: " + cantidad);
-        System.out.println("Precio por unidad: $" + sacarPrecioC());
-        System.out.println("Total a pagar: $" + calcularTotal());
+        System.out.println("Costo de impresión por unidad: $" + sacarPrecioC());
+    }
+
+    public String getMetodo() {
+        return metodo;
+    }
+
+    public int getCantidad() {
+        return cantidad;
     }
 }
+
