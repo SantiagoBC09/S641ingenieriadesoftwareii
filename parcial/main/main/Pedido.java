@@ -23,8 +23,8 @@ public class Pedido {
     }
 
     public void mostrarFactura() {
-        System.out.println("=== FACTURA ===");
-        System.out.println("\n  Cliente: " + cliente.getNombre() + "\n Numero de Tarjeta (no se mostrara por seguridad): " + "****");
+        System.out.println("--- FACTURA ---");
+        System.out.println("\n  Cliente: " + cliente.getNombre() + "\n Numero de Tarjeta (no se mostrara por seguridad): " + "*****");
         for (Producto p : productos) {
             System.out.println("- " + p.getClass().getSimpleName() + " $" + p.calcularPrecio());
         }
