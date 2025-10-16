@@ -6,14 +6,19 @@ public class Camara {
     private String calidad;
     private String formato;
 
+    // Constructor principal
     public Camara(String modelo, String calidad, String formato) {
         this.modelo = modelo;
         this.calidad = calidad;
         this.formato = formato;
     }
 
-    public Camara(String modelo2, String calidad2, String estado, String formato2) {
-        
+    // 🔧 Constructor que antes estaba vacío — ahora corregido
+    public Camara(String modelo, String calidad, String estado, String formato) {
+        this.modelo = modelo;
+        this.calidad = calidad;
+        this.formato = formato;
+        // El parámetro "estado" se ignora por ahora, pero puedes usarlo más adelante si quieres
     }
 
     public double sacarPrecio() {
