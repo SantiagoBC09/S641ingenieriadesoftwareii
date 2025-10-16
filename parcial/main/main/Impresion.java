@@ -1,50 +1,21 @@
 package main;
-// Clase Impresion
-class Impresion {
 
-    private String metodo;
+public class Impresion extends Producto {
+    private String tipo; // "Color" o "Blanco y negro"
     private int cantidad;
 
-    public Impresion(String metodo, int cantidad) {
-        this.metodo = metodo;
+    public Impresion(int id, String tipo, int cantidad) {
+        this.id = id;
+        this.tipo = tipo;
         this.cantidad = cantidad;
+        this.nombre = "Impresión " + tipo;
+        this.precio = calcularPrecio();
     }
 
-    public double sacarPrecioC() {
-        double precioMetodo;
-
-        switch (metodo.toLowerCase()) {
-            case "a color":
-                precioMetodo = 2000;
-                break;
-            case "a blanco y negro":
-                precioMetodo = 1500;
-                break;
-            default:
-                precioMetodo = 1000;
-                break;
-        }
-
-        return precioMetodo;
-    }
-
-    public double calcularTotal(double precioFoto) {
-        // Precio total = precio de foto * cantidad + costo de impresión por unidad
-        return (precioFoto + sacarPrecioC()) * cantidad;
-    }
-
-    public void mostrarDetalles() {
-        System.out.println("Método de impresión: " + metodo);
-        System.out.println("Cantidad de impresiones: " + cantidad);
-        System.out.println("Costo de impresión por unidad: $" + sacarPrecioC());
-    }
-
-    public String getMetodo() {
-        return metodo;
-    }
-
-    public int getCantidad() {
-        return cantidad;
+    @Override
+    public double calcularPrecio() {
+        double precioUnitario = tipo.equalsIgnoreCase("color") ? 2000 : 1000;
+        return cantidad * precioUnitario;
     }
 }
 

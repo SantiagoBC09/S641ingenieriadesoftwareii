@@ -1,23 +1,17 @@
 package main;
-class Cliente {
 
-    private String identificacion;
+public class Cliente {
+    private String cedula;
     private String nombre;
-    private String razon; // motivo de la sesión (boda, graduación, etc.)
+    private String evento;
 
-    public Cliente(String identificacion, String nombre, String razon) {
-        this.identificacion = identificacion;
+    public Cliente(String cedula, String nombre, String evento) {
+        this.cedula = cedula;
         this.nombre = nombre;
-        this.razon = razon;
+        this.evento = evento;
     }
 
-    public void mostrarDatos() {
-        System.out.println("Cliente: " + nombre);
-        System.out.println("ID: " + identificacion);
-        System.out.println("Razón de las fotos: " + razon);
+    public String getNombre() {
+        return nombre;
     }
-
-    public String getIdentificacion() { return identificacion; }
-    public String getNombre() { return nombre; }
-    public String getRazon() { return razon; }
 }
