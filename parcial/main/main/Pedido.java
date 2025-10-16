@@ -1,34 +1,33 @@
 package main;
+import java.util.Date;
 
 public class Pedido {
     private Cliente cliente;
     private Producto[] productos;
-    private int idPedido;
-    public Object mostrarFactura;
+    private Date fecha;
+    private int numeroTarjetaCredito;
 
-    public Pedido(Cliente cliente, Producto[] productos, int idPedido) {
+    public Pedido(Cliente cliente, Producto[] productos, int numeroTarjetaCredito) {
         this.cliente = cliente;
         this.productos = productos;
-        this.idPedido = idPedido;
+        this.fecha = new Date();
+        this.numeroTarjetaCredito = numeroTarjetaCredito;
     }
 
     public double calcularTotal() {
         double total = 0;
         for (Producto p : productos) {
-            total += p.getPrecio();
+            total += p.calcularPrecio();
         }
         return total;
     }
 
     public void mostrarFactura() {
-        System.out.println("\n=== FACTURA ===");
-        System.out.println("Cliente: " + cliente.getNombre());
+        System.out.println("=== FACTURA ===");
+        System.out.println("\n  Cliente: " + cliente.getNombre() + "\n Numero de Tarjeta (no se mostrara por seguridad): " + "****");
         for (Producto p : productos) {
-            System.out.println("- " + p);
+            System.out.println("- " + p.getClass().getSimpleName() + " $" + p.calcularPrecio());
         }
-        System.out.println("Total: $" + calcularTotal());
+        
     }
-
-    
 }
-

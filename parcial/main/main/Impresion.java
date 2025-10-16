@@ -1,21 +1,19 @@
 package main;
 
 public class Impresion extends Producto {
-    private String tipo; // "Color" o "Blanco y negro"
+
+    private String color;
     private int cantidad;
 
-    public Impresion(int id, String tipo, int cantidad) {
-        this.id = id;
-        this.tipo = tipo;
+    public Impresion(int numero, String color, int cantidad) {
+        super(numero);
+        this.color = color;
         this.cantidad = cantidad;
-        this.nombre = "Impresión " + tipo;
-        this.precio = calcularPrecio();
     }
 
     @Override
     public double calcularPrecio() {
-        double precioUnitario = tipo.equalsIgnoreCase("color") ? 2000 : 1000;
-        return cantidad * precioUnitario;
+        double base = color.equalsIgnoreCase("a color") ? 2000 : 1500;
+        return base * cantidad;
     }
 }
-
