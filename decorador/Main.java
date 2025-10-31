@@ -1,11 +1,30 @@
 package decorador;
 
 public class Main {
+
+    private static void procesando(String mensaje) {
+        try {
+            System.out.print(mensaje);
+            for (int i = 0; i < 3; i++) {
+                Thread.sleep(500);
+                System.out.print(".");
+            }
+            System.out.println(" ✓\n");
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) {
         System.out.println("═══════════════════════════════════════════════");
-        System.out.println("   SISTEMA DE RESERVAS - PELUQUERÍA ELEGANTE");
+        System.out.println("   Bienvenido a Yourbaber");
         System.out.println("═══════════════════════════════════════════════\n");
         
+        procesando("Cargando sistema");
+        
+        // Cita 1: Corte simple
+        procesando("Procesando Cita #1");
+
         // Cita 1: Corte simple
         In_yourbaber servicio1 = new Corte();
         Cita cita1 = new Cita("María García", "2025-11-05", "10:00 AM", servicio1);
