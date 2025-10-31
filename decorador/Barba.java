@@ -1,18 +1,18 @@
 package decorador;
 
-class Mechas extends DecoradorServicio {
-    public Mechas(In_yourbaber servicio) {
+class Barba extends DecoradorServicio {
+    public Barba(In_yourbaber servicio) {
         super(servicio);
     }
     
     @Override
     public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Mechas";
+        return servicioBase.getDescripcion() + " + Barba";
     }
     
     @Override
     public double getPrecio() {
-        return servicioBase.getPrecio() + 60000.0;
+        return servicioBase.getPrecio() + 4000.0;
     }
     
     @Override

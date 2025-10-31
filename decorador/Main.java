@@ -27,14 +27,18 @@ public class Main {
 
         // Cita 1: Corte simple
         In_yourbaber servicio1 = new Corte();
-        Cita cita1 = new Cita("María García", "2025-11-05", "10:00 AM", servicio1);
+        Cita cita1 = new Cita("Alvaro García", "2025-11-05", "10:00 AM", servicio1);
         cita1.imprimirResumen();
+
+        procesando("Procesando Cita #2");
         
         // Cita 2: Corte con tinte
         In_yourbaber servicio2 = new Corte();
         servicio2 = new Tinte(servicio2);
-        Cita cita2 = new Cita("Laura Martínez", "2025-11-05", "11:00 AM", servicio2);
+        Cita cita2 = new Cita("Mauricio Martínez", "2025-11-05", "11:00 AM", servicio2);
         cita2.imprimirResumen();
+
+        procesando("Procesando Cita #3");
         
         // Cita 3: Corte completo con tinte, tratamiento y masaje
         In_yourbaber servicio3 = new Corte();
@@ -45,26 +49,27 @@ public class Main {
         cita3.imprimirResumen();
         
         
-        
-        // Cita 5: Paquete completo de lujo
+        procesando("Procesando Cita #4");
+        // Cita 4: Paquete completo de lujo
         In_yourbaber servicio4 = new Corte();
-        servicio4 = new Mechas(servicio4);
+        servicio4 = new Barba(servicio4);
         servicio4 = new Keratina(servicio4);
         servicio4 = new MasajeCapilar(servicio4);
-        Cita cita4 = new Cita("Isabella Torres", "2025-11-06", "10:00 AM", servicio4);
+        Cita cita4 = new Cita("Alvaro Torres", "2025-11-06", "10:00 AM", servicio4);
         cita4.imprimirResumen();
         
-        
+        procesando("Procesando Cita #5");
         // Cita 6: Depilación con tratamiento
-        In_yourbaber servicio6 = new Pedicure();
-        servicio6 = new TratamientoCapilar(servicio6);
-        Cita cita6 = new Cita("Valentina Gómez", "2025-11-07", "11:00 AM", servicio6);
-        cita6.imprimirResumen();
+        In_yourbaber servicio5 = new Pedicure();
+        servicio5 = new TratamientoUñas(servicio5);
+        servicio5 = new LimpiezaProfunda(servicio5);
+        Cita cita5 = new Cita("Valentina Gómez", "2025-11-07", "11:00 AM", servicio5);
+        cita5.imprimirResumen();
         
         System.out.println("═══════════════════════════════════════════════");
         System.out.println("   ESTADÍSTICAS DEL DÍA");
         System.out.println("═══════════════════════════════════════════════");
-        System.out.println("Total de citas programadas: 6");
+        System.out.println("Total de citas programadas: 5");
         System.out.println("═══════════════════════════════════════════════");
     }
 }

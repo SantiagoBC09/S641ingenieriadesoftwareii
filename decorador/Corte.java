@@ -8,7 +8,7 @@ class Corte implements In_yourbaber {
     
     @Override
     public double getPrecio() {
-        return 25000.0; // $25,000 COP
+        return 15000.0; 
     }
     
     @Override
