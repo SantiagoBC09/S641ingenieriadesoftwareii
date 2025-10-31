@@ -1,5 +1,6 @@
 package decorador;
 
+
 class Corte implements In_yourbaber {
     @Override
     public String getDescripcion() {

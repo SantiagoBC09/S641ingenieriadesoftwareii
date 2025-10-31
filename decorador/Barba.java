@@ -1,5 +1,6 @@
 package decorador;
 
+
 class Barba extends DecoradorServicio {
     public Barba(In_yourbaber servicio) {
         super(servicio);

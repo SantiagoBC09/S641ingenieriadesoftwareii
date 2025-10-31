@@ -7,7 +7,7 @@ class TratamientoUñas extends DecoradorServicio {
     
     @Override
     public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Tratamiento Capilar";
+        return servicioBase.getDescripcion() + " + Tratamiento Uñas";
     }
     
     @Override
