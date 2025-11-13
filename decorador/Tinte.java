@@ -6,17 +6,17 @@ class Tinte extends DecoradorServicio {
     }
     
     @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Tinte";
+    public String descripcion() {
+        return servicioBase.descripcion() + " + Tinte";
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio() + 45000.0;
+    public double precio() {
+        return servicioBase.precio() + 45000.0;
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos() + 60;
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos() + 60;
     }
 }

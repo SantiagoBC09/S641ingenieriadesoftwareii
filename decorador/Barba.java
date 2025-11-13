@@ -6,18 +6,18 @@ class Barba extends DecoradorServicio {
         super(servicio);
     }
     
-    @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Barba";
+     @Override
+    public String descripcion() {
+        return servicioBase.descripcion() + " + Barba";
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio() + 4000.0;
+    public double precio() {
+        return servicioBase.precio() + 25000.0;
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos() + 90;
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos() + 30;
     }
 }

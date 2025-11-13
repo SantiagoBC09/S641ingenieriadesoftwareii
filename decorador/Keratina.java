@@ -5,18 +5,18 @@ class Keratina extends DecoradorServicio {
         super(servicio);
     }
     
-    @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Keratina";
+   @Override
+    public String descripcion() {
+        return servicioBase.descripcion() + " + Keratina";
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio() + 80000.0;
+    public double precio() {
+        return servicioBase.precio() + 80000.0;
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos() + 120;
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos() + 120;
     }
 }

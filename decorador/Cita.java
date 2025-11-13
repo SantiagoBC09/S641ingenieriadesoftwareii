@@ -21,10 +21,10 @@ class Cita {
         System.out.println("Fecha: " + fecha);
         System.out.println("Hora: " + hora);
         System.out.println("------------------------------------------------");
-        System.out.println("Servicios: " + servicio.getDescripcion());
+        System.out.println("Servicios: " + servicio.descripcion());
         System.out.println("------------------------------------------------");
-        System.out.println("Duración estimada: " + servicio.getDuracionMinutos() + " minutos");
-        System.out.println("Precio Total: $" + String.format("%.0f", servicio.getPrecio()) + " COP");
+        System.out.println("Duración estimada: " + servicio.duracionMinutos() + " minutos");
+        System.out.println("Precio Total: $" + String.format("%.0f", servicio.precio()) + " COP");
         System.out.println("================================================\n");
     }
 }

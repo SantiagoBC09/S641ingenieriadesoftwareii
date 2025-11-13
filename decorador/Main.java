@@ -59,7 +59,7 @@ public class Main {
         cita4.imprimirResumen();
         
         procesando("Procesando Cita #5");
-        // Cita 6: Depilación con tratamiento
+        // Cita 5: Depilación con tratamiento
         In_yourbaber servicio5 = new Pedicure();
         servicio5 = new TratamientoUñas(servicio5);
         servicio5 = new LimpiezaProfunda(servicio5);

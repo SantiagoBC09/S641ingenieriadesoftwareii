@@ -6,18 +6,18 @@ class TratamientoCapilar extends DecoradorServicio {
     }
     
     @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Tratamiento Capilar";
+    public String descripcion() {
+        return servicioBase.descripcion() + " + Tratamiento Capilar";
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio() + 35000.0;
+    public double precio() {
+        return servicioBase.precio() + 35000.0;
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos() + 30;
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos() + 30;
     }
 }
 

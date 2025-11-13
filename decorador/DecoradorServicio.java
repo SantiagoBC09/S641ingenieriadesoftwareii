@@ -7,18 +7,18 @@ abstract class DecoradorServicio implements In_yourbaber {
         this.servicioBase = servicio;
     }
     
-    @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion();
+  @Override
+    public String descripcion() {
+        return servicioBase.descripcion();
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio();
+    public double precio() {
+        return servicioBase.precio();
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos();
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos();
     }
 }

@@ -5,18 +5,20 @@ class MasajeCapilar extends DecoradorServicio {
         super(servicio);
     }
     
-    @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Masaje Capilar";
+   @Override
+    public String descripcion() {
+        return servicioBase.descripcion() + " + Masaje Capilar";
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio() + 20000.0;
+    public double precio() {
+        return servicioBase.precio() + 60000.0;
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos() + 15;
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos() + 90;
     }
 }
+
+

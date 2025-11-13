@@ -6,17 +6,17 @@ package decorador;
     }
     
     @Override
-    public String getDescripcion() {
-        return servicioBase.getDescripcion() + " + Limpieza Profunda";
+    public String descripcion() {
+        return servicioBase.descripcion() + " + Limpieza Profunda";
     }
     
     @Override
-    public double getPrecio() {
-        return servicioBase.getPrecio() + 45000.0;
+    public double precio() {
+        return servicioBase.precio() + 60000.0;
     }
     
     @Override
-    public int getDuracionMinutos() {
-        return servicioBase.getDuracionMinutos() + 60;
+    public int duracionMinutos() {
+        return servicioBase.duracionMinutos() + 90;
     }
 }

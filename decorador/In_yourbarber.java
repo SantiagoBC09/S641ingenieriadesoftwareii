@@ -1,7 +1,7 @@
 package decorador;
 
 interface In_yourbaber {
-    String getDescripcion();
-    double getPrecio();
-    int getDuracionMinutos();
+    String descripcion();
+    double precio();
+    int duracionMinutos();
 }
