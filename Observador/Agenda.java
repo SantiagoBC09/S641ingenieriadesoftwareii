@@ -11,6 +11,6 @@ class Agenda implements Observador {
     @Override
     public void actualizar() {
         Cita c = sujeto.obtenerEstado();
-        System.out.println("AGENDA -> Actualizando registro: " + c);
+        System.out.println("\n AGENDA -> Actualizando registro: " + c);
     }
 }

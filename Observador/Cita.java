@@ -22,7 +22,7 @@ public class Cita {
 
     @Override
     public String toString() {
-        return cliente + " | " + servicio + " | " + fechaHora + " | Estado: " + estado;
+        return cliente + "\n " + servicio + "\n " +"Fecha y hora: "+ fechaHora + "\n Estado: " + estado;
     }
 }
 

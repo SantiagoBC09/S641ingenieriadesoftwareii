@@ -21,8 +21,10 @@ public class Reportes implements Observador {
             case "CANCELADA": citasCanceladas++; break;
         }
 
-        System.out.println("REPORTE -> " + c.getEstado() + 
-                           " Cliente: " + c.getCliente());
+        System.out.println(
+        
+        "REPORTE -> " + c.getEstado() + 
+                           " Cliente: " + c.getCliente()+"\n --------------------------------");
     }
 
     public void mostrarReporte() {

@@ -11,7 +11,7 @@ public class Notificacion implements Observador {
     @Override
     public void actualizar() {
         Cita c = sujeto.obtenerEstado();
-        System.out.println("SMS  Cliente: " + c.getCliente() +
+        System.out.println("SMS  Cliente: " + c.getCliente() + "\n" +
                            "Estado de su cita: " + c.getEstado());
     }
 }
